@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Suiii</title>
+<style>
+    p {
+    text-align: center;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    }
+    img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    }
+</style>
+</head>
+<body>
+    <p>Wanna hangout with me?</p>
+    <img src="https://1.bp.blogspot.com/-CwIjwA56di8/WAT57UzNF8I/AAAAAAAAT_4/hihRJMxwtTAUsT5S3AfeeA1iZF9JWvd7wCLcB/s1600/Una%2Brosa%2Bpara%2Bti%2Bcon%2Btierno%2Bperrito.gif" alt="GIF animado">
+</body>
+<title>Botões</title>
+<style>
+    #botao1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    #botao2 {
+    position: absolute;
+    }
+</style>
+</head>
+<body>
+    <button id="botao1">Yes!</button>
+    <button id="botao2">Nooo</button>
+    <style>
+        #botao2{
+            margin-left: 45%;
+            margin-top:2%;
+            position:absolute;
+        }
+    </style>
+    <script>
+        setInterval(function() {
+        var botao2 = document.getElementById('botao2');
+        var height = window.innerHeight - 1;
+        var width = window.inner
+        var x = Math.random() * window.innerWidth * 0.5;
+        var y = Math.random() * window.innerHeight * 0.5;
+        botao2.addEventListener("mouseover" , function(event){
+            botao2.style.left = x + 'px';
+            botao2.style.top = y + 'px';
+        })
+        }, 500);
+    </script>
+    <script>document.getElementById('botao1').addEventListener('click', function() {
+    alert('I LOV YOU TOO');
+    });
+</script>
+</body>
+</html>
